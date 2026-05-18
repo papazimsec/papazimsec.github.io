@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PapaZimsec - ZIMSEC Past Papers, Study Tips & Tutoring | #1 Zimbabwe Study Platform</title>
+    <meta name="description" content="PapaZimsec - Download ZIMSEC past papers, study tips, predicted papers, connect with tutors. Free & Premium. 1000+ papers. 500K+ students.">
+    <meta name="keywords" content="ZIMSEC, past papers, O-Level, A-Level, Zimbabwe, tutors, study tips, exam prep">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1e40af;
+            --primary-light: #3b82f6;
+            --secondary: #7c3aed;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--gray-900);
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 900;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            color: var(--gray-900);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--gray-200);
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* Newsletter */
+        .newsletter-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .newsletter-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .newsletter-form input {
+            padding: 12px 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            padding: 12px 30px;
+            background: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Blog */
+        .blog-post {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .blog-date {
+            color: var(--gray-600);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: var(--gray-700);
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            background: var(--gray-50);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: var(--gray-100);
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            background: white;
+            border-top: 2px solid var(--gray-200);
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--success);
+            text-align: center;
+        }
+
+        .stars {
+            color: var(--warning);;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: var(--gray-700);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Tutors */
+        .tutor-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .tutor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .tutor-info {
+            padding: 20px;
+        }
+
+        .tutor-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .tutor-subject {
+            color: var(--gray-600);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .tutor-rating {
+            color: var(--warning);
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Predicted Papers */
+        .predicted-paper {
+            background: linear-gradient(135deg, var(--warning) 0%, var(--danger) 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .predicted-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.3);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Premium */
+        .premium-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 50px 20px;
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+
+        .premium-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .premium-list {
+            list-style: none;
+        }
+
+        .premium-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .premium-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: 900;
+            margin: 20px 0;
+        }
+
+        .pricing-card {
+            background: white;
+            color: var(--gray-900);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--gray-700);
+            padding-top: 20px;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* Ad Space */
+        .ad-space {
+            background: var(--gray-100);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .premium-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 14px;
+            }
+        }
+
+        .success-message {
+            background: var(--success);
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>PapaZimsec</span>
+                </div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#papers">Papers</a>
+                    <a href="#ai-study">AI Tutor</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#tutors">Tutors</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#premium">Premium</a>
+                </nav>
+                <button class="btn btn-primary" onclick="alert('Sign in coming soon')">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Master ZIMSEC Exams</h1>
+            <p>Past Papers • Study Tips • Expert Tutors • Predicted Papers</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Past Papers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500K+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Tutors</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Free</span>
+                    <span class="stat-label">To Start</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section style="padding: 20px;">
+        <div class="container">
+            <div class="newsletter-box">
+                <h3><i class="fas fa-envelope"></i> Get Free Study Tips Daily</h3>
+                <p>Join 50,000+ students getting exclusive ZIMSEC resources and tips</p>
+                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="success-message" id="newsletterSuccess">✓ Thanks for subscribing! Check your email.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Papers -->
+    <section class="section" style="background: var(--gray-50);" id="papers">
+        <div class="container">
+            <h2 class="section-title">Find Past Papers</h2>
+            <div style="margin-bottom: 30px;">
+                <input type="text" id="subjectSearch" placeholder="Search subject..." style="width: 100%; padding: 12px; border: 2px solid var(--gray-200); border-radius: 6px; margin-bottom: 15px;">
+                <select id="levelFilter" style="width: 100%; padding: 12px; border: 2px solid var(--gray-200); border-radius: 6px; margin-bottom: 15px;">
+                    <option value="">All Levels</option>
+                    <option value="O-Level">O-Level</option>
+                    <option value="A-Level">A-Level</option>
+                </select>
+                <button class="btn btn-primary" onclick="filterPapers()" style="width: 100%;">Search</button>
+            </div>
+
+            <!-- Ad Space 1 -->
+            <div class="ad-space">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <div class="grid" id="papersGrid"></div>
+
+            <!-- Ad Space 2 -->
+            <div class="ad-space">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="2222222222" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Study Tool -->
+    <section class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;" id="ai-study">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">
+                <i class="fas fa-brain"></i> AI Study Assistant
+            </h2>
+            <p style="text-align: center; margin-bottom: 30px; font-size: 16px;">Ask anything about ZIMSEC topics and get instant answers</p>
+            
+            <div style="max-width: 900px; margin: 0 auto; background: white; border-radius: 10px; padding: 30px; color: var(--gray-900);">
+                <div id="aiChat" style="background: var(--gray-50); border-radius: 8px; padding: 20px; height: 300px; overflow-y: auto; margin-bottom: 20px;">
+                    <div style="text-align: center; color: var(--gray-600); padding: 20px;">
+                        <i class="fas fa-lightbulb" style="font-size: 32px; margin-bottom: 10px; display: block;"></i>
+                        <p>Ask me anything about ZIMSEC subjects!</p>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr auto; gap: 10px; margin-bottom: 20px;">
+                    <input type="text" id="aiQuestion" placeholder="Ask about photosynthesis, math, essays..." style="padding: 12px; border: 2px solid var(--gray-300); border-radius: 6px; font-size: 14px;">
+                    <button onclick="askAI()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Ask</button>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                    <button onclick="quickAsk('Photosynthesis explained')" style="padding: 10px; background: var(--gray-100); border: 2px solid var(--gray-300); border-radius: 6px; cursor: pointer; font-size: 12px;">📚 Biology</button>
+                    <button onclick="quickAsk('How to solve equations')" style="padding: 10px; background: var(--gray-100); border: 2px solid var(--gray-300); border-radius: 6px; cursor: pointer; font-size: 12px;">📐 Mathematics</button>
+                    <button onclick="quickAsk('Essay writing tips')" style="padding: 10px; background: var(--gray-100); border: 2px solid var(--gray-300); border-radius: 6px; cursor: pointer; font-size: 12px;">✍️ English</button>
+                    <button onclick="quickAsk('Chemistry equilibrium')" style="padding: 10px; background: var(--gray-100); border: 2px solid var(--gray-300); border-radius: 6px; cursor: pointer; font-size: 12px;">⚗️ Chemistry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predicted Papers -->
+    <section class="section" id="predicted">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-crystal-ball"></i> Predicted Papers (New This Month)</h2>
+            <div style="max-width: 800px;">
+                <div class="predicted-paper">
+                    <div class="predicted-label">🔥 NEW - May 2025</div>
+                    <strong>Mathematics O-Level Predicted Paper</strong>
+                    <p>Expert predictions for upcoming exam</p>
+                    <button class="btn btn-primary" onclick="alert('Download coming soon!')">Download (Premium)</button>
+                </div>
+                <div class="predicted-paper">
+                    <div class="predicted-label">🔥 NEW - May 2025</div>
+                    <strong>English Language O-Level Predicted Paper</strong>
+                    <p>Expert predictions for upcoming exam</p>
+                    <button class="btn btn-primary" onclick="alert('Download coming soon!')">Download (Premium)</button>
+                </div>
+                <div class="predicted-paper">
+                    <div class="predicted-label">🔥 NEW - May 2025</div>
+                    <strong>Biology A-Level Predicted Paper</strong>
+                    <p>Expert predictions for upcoming exam</p>
+                    <button class="btn btn-primary" onclick="alert('Download coming soon!')">Download (Premium)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Study Tips -->
+    <section class="section" style="background: var(--gray-50);" id="blog">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> Study Tips & Blog</h2>
+            
+            <div class="blog-post">
+                <div class="blog-date"><i class="fas fa-calendar"></i> May 15, 2025</div>
+                <h3>10 ZIMSEC Exam Hacks That Actually Work</h3>
+                <p>Discover the study techniques that top scorers use. From time management to memory tricks, learn what works and what doesn't for ZIMSEC exams.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+
+            <div class="blog-post">
+                <div class="blog-date"><i class="fas fa-calendar"></i> May 12, 2025</div>
+                <h3>How to Score A's in Mathematics: Step-by-Step Guide</h3>
+                <p>Mathematics is all about practice. We break down the exact formula successful students use to master every topic and solve problems fast.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+
+            <div class="blog-post">
+                <div class="blog-date"><i class="fas fa-calendar"></i> May 10, 2025</div>
+                <h3>English Language: Master Essay Writing in 30 Days</h3>
+                <p>Essay writing seems hard, but it's actually a formula. Learn the exact structure ZIMSEC examiners want to see and improve your grades.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+
+            <div class="blog-post">
+                <div class="blog-date"><i class="fas fa-calendar"></i> May 8, 2025</div>
+                <h3>Last-Minute Exam Prep: What Actually Works 2 Weeks Before</h3>
+                <p>Only 2 weeks left? Don't panic. Here's the realistic study plan that can still boost your score significantly before exam day.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutors Marketplace -->
+    <section class="section" id="tutors">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Expert Tutors</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Connect with experienced ZIMSEC tutors for 1-on-1 sessions</p>
+            
+            <div class="grid">
+                <div class="tutor-card">
+                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); height: 100px;"></div>
+                    <div class="tutor-info">
+                        <div class="tutor-name">Mr. Chuma</div>
+                        <div class="tutor-subject">Mathematics & Physics</div>
+                        <div class="tutor-rating">⭐⭐⭐⭐⭐ (45 reviews)</div>
+                        <p style="font-size: 14px; margin-bottom: 15px;">10+ years experience. Specializes in A-Level Math.</p>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Contact tutor feature coming soon!')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%); height: 100px;"></div>
+                    <div class="tutor-info">
+                        <div class="tutor-name">Ms. Thandiwe</div>
+                        <div class="tutor-subject">English & Literature</div>
+                        <div class="tutor-rating">⭐⭐⭐⭐⭐ (38 reviews)</div>
+                        <p style="font-size: 14px; margin-bottom: 15px;">8+ years experience. Essay writing specialist.</p>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Contact tutor feature coming soon!')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--warning) 100%); height: 100px;"></div>
+                    <div class="tutor-info">
+                        <div class="tutor-name">Mr. Tawanda</div>
+                        <div class="tutor-subject">Sciences (Bio, Chem, Physics)</div>
+                        <div class="tutor-rating">⭐⭐⭐⭐⭐ (52 reviews)</div>
+                        <p style="font-size: 14px; margin-bottom: 15px;">12+ years experience. Lab practical expert.</p>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Contact tutor feature coming soon!')">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="margin-bottom: 15px;">Are you a tutor? List your profile and earn from referrals!</p>
+                <button class="btn btn-secondary" onclick="alert('Tutor registration coming soon!')">Become a Tutor</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <h2 class="section-title">What Students Say</h2>
+            <div class="grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"PapaZimsec helped me get an A in Mathematics! The past papers and study tips were exactly what I needed."</div>
+                    <div class="testimonial-author">- Chido, O-Level Student</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Best resource for ZIMSEC exam prep. The tutors are amazing and always ready to help. Highly recommend!"</div>
+                    <div class="testimonial-author">- Blessing, A-Level Student</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"The predicted papers were spot on! I feel so much more confident going into my exams now."</div>
+                    <div class="testimonial-author">- Tatiana, O-Level Student</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Free access to past papers and premium tutoring options. This platform changed my exam results!"</div>
+                    <div class="testimonial-author">- Favour, A-Level Student</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"The blog posts are so helpful! Real exam strategies from people who scored A's. Love it!"</div>
+                    <div class="testimonial-author">- Sipho, O-Level Student</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Worth every penny for the premium version. The support and resources are incredible."</div>
+                    <div class="testimonial-author">- Memory, A-Level Student</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Are the past papers free?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! All O-Level and A-Level past papers are available for free. Our premium membership gives you extra benefits like solutions, tutoring, and predicted papers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How often are new papers added?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We add new papers monthly when ZIMSEC releases them. Subscribe to our newsletter to get notifications immediately.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I get tutoring help?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We have 50+ verified tutors available for 1-on-1 sessions. Browse our tutors section and contact them directly. Premium members get discount rates.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What's included in premium?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Premium members get: detailed solutions, predicted papers, tutor discounts, ad-free experience, offline downloads, and priority support.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is my data safe?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We use industry-standard encryption. Your email and personal data are never shared with anyone. Read our privacy policy for details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I become a tutor?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! If you're an experienced tutor, you can join our platform and earn money from student referrals. Click "Become a Tutor" to apply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-form">
+                <form onsubmit="handleContact(event)">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+                <div class="success-message" id="contactSuccess">✓ Thanks for your message! We'll respond within 24 hours.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium -->
+    <section class="section">
+        <div class="container">
+            <div class="premium-section">
+                <div class="premium-grid">
+                    <div>
+                        <h2>Unlock Premium</h2>
+                        <p>Get unlimited access to all features</p>
+                        <ul class="premium-list">
+                            <li>Detailed solutions & explanations</li>
+                            <li>Monthly predicted papers</li>
+                            <li>1-on-1 tutoring discounts</li>
+                            <li>Ad-free experience</li>
+                            <li>Offline download access</li>
+                            <li>Priority email support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="pricing-card">
+                            <h3>Premium Plus</h3>
+                            <div class="price">ZWL 29.99</div>
+                            <p style="font-size: 14px; color: var(--gray-600); margin-bottom: 20px;">per month</p>
+                            <button class="btn btn-secondary" style="width: 100%; margin-bottom: 10px;" onclick="alert('Premium signup coming soon!')">Start Now</button>
+                            <p style="font-size: 12px; color: var(--gray-600);">7-day free trial • Cancel anytime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space 3 -->
+    <section style="padding: 20px; background: var(--gray-50);">
+        <div class="container">
+            <div class="ad-space">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="3333333333" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-open"></i> PapaZimsec</h3>
+                    <p style="color: #d1d5db; font-size: 14px;">Zimbabwe's #1 ZIMSEC exam prep platform</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#papers">Past Papers</a>
+                    <a href="#blog">Study Tips</a>
+                    <a href="#tutors">Tutors</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PapaZimsec. All rights reserved. 🇿🇼</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample papers
+        const allPapers = [
+            { subject: 'Mathematics', level: 'O-Level', year: 2024, papers: ['Paper 1', 'Paper 2'] },
+            { subject: 'English Language', level: 'O-Level', year: 2024, papers: ['Paper 1'] },
+            { subject: 'Biology', level: 'O-Level', year: 2024, papers: ['Paper 1'] },
+            { subject: 'Chemistry', level: 'O-Level', year: 2024, papers: ['Paper 1'] },
+            { subject: 'Physics', level: 'O-Level', year: 2024, papers: ['Paper 1'] },
+            { subject: 'Mathematics', level: 'A-Level', year: 2023, papers: ['Paper 1', 'Paper 2', 'Paper 3'] },
+            { subject: 'Biology', level: 'A-Level', year: 2023, papers: ['Paper 1', 'Paper 2'] },
+        ];
+
+        function renderPapers(papers) {
+            const grid = document.getElementById('papersGrid');
+            grid.innerHTML = '';
+            papers.forEach(paper => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <strong>${paper.subject}</strong><br>
+                        ${paper.level} • ${paper.year}
+                    </div>
+                    <div class="card-body">
+                        ${paper.papers.map((p, i) => `
+                            <button class="btn btn-primary" style="width: 100%; margin-bottom: 8px;" onclick="alert('Download ${p}')">
+                                <i class="fas fa-download"></i> ${p}
+                            </button>
+                        `).join('')}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterPapers() {
+            const search = document.getElementById('subjectSearch').value.toLowerCase();
+            const level = document.getElementById('levelFilter').value;
+            const filtered = allPapers.filter(p => 
+                (!search || p.subject.toLowerCase().includes(search)) &&
+                (!level || p.level === level)
+            );
+            renderPapers(filtered);
+        }
+
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            answer.classList.toggle('active');
+        }
+
+        function handleNewsletter(e) {
+            e.preventDefault();
+            document.getElementById('newsletterSuccess').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('newsletterSuccess').style.display = 'none';
+            }, 3000);
+        }
+
+        function handleContact(e) {
+            e.preventDefault();
+            document.getElementById('contactSuccess').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('contactSuccess').style.display = 'none';
+            }, 3000);
+        }
+
+        // AI Study Tool
+        const aiResponses = {
+            'photosynthesis': 'Photosynthesis is the process where plants use sunlight to convert water and carbon dioxide into glucose (sugar) and oxygen. The equation is: 6CO2 + 6H2O + light → C6H12O6 + 6O2. It happens in the chloroplasts of plant cells. Light-dependent reactions occur in the thylakoids, while the Calvin cycle (light-independent) occurs in the stroma.',
+            'quadratic': 'Quadratic equations have the form ax² + bx + c = 0. To solve: 1) Use the quadratic formula: x = (-b ± √(b²-4ac)) / 2a, 2) Factorize if possible, 3) Complete the square. The discriminant (b²-4ac) tells you if there are real or complex roots.',
+            'essay': 'Good essays have: 1) Introduction with thesis, 2) Body paragraphs with evidence, 3) Conclusion restating main points. Use PEEL: Point, Evidence, Explain, Link. Write clearly, use topic sentences, and support claims with examples.',
+            'equilibrium': 'Chemical equilibrium is when forward and reverse reaction rates are equal. Le Chatelier\'s Principle: if conditions change, the equilibrium shifts to counteract the change. Factors: concentration, pressure, temperature affect equilibrium position.',
+            'default': 'Great question! For ZIMSEC exam success: 1) Practice past papers regularly, 2) Understand concepts, not just memorize, 3) Manage your time in exams, 4) Get a tutor if struggling. What specific topic would you like help with?'
+        };
+
+        function askAI() {
+            const question = document.getElementById('aiQuestion').value.trim();
+            if (!question) return;
+
+            const chatBox = document.getElementById('aiChat');
+            
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.style.cssText = 'margin-bottom: 15px; padding: 10px; background: var(--primary-light); color: white; border-radius: 6px; max-width: 80%; margin-left: auto;';
+            userMsg.textContent = '👤 You: ' + question;
+            chatBox.appendChild(userMsg);
+
+            // Find relevant response
+            let response = aiResponses.default;
+            const questionLower = question.toLowerCase();
+            for (let key in aiResponses) {
+                if (questionLower.includes(key)) {
+                    response = aiResponses[key];
+                    break;
+                }
+            }
+
+            // Add AI response
+            setTimeout(() => {
+                const aiMsg = document.createElement('div');
+                aiMsg.style.cssText = 'margin-bottom: 15px; padding: 10px; background: var(--gray-200); color: var(--gray-900); border-radius: 6px; max-width: 80%;';
+                aiMsg.innerHTML = '🤖 <strong>AI Tutor:</strong> ' + response;
+                chatBox.appendChild(aiMsg);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }, 500);
+
+            document.getElementById('aiQuestion').value = '';
+        }
+
+        function quickAsk(question) {
+            document.getElementById('aiQuestion').value = question;
+            askAI();
+        }
+
+        renderPapers(allPapers);
+    </script>
+</body>
+</html>
